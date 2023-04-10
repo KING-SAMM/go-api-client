@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <h1 class="heading">Add New User</h1>
+    <div class="container">
+        <div class="form">
+            <form id="form" method="POST" action="/user/add">
+                <input type="text" name="firstname" placeholder="Firstname">
+                <input type="text" name="lastname" placeholder="Lastname">
+                <input type="text" name="email" placeholder="Email">
+                <button type="submit" class="btn">Add</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

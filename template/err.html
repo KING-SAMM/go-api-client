@@ -1,0 +1,24 @@
+{{ define "404_error" }}
+<div class="container_404">
+    <div style="background-color: #fff; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 0 60px; margin-top: 10px; ">
+        <h1 style="font-size: 200px; margin-top: 30px; color: rgba(141, 141, 220, 0.2); z-index: 0;">
+            404
+        </h1>
+        <h3 style="margin-top: -292px; font-size: 25px; color: navy; z-index: 333;">
+            Oops! Wrong page.
+        </h3>
+        <p style="margin-bottom: 80px;  color: navy;">Check your network connection, and that the web address is correct</p>
+    </div>
+</div>
+{{ end }}
+
+{{ define "no_data_error" }}
+<div class="container_no_data">
+    <div style="background-color: #fff; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 0 60px; margin-top: 10px; ">
+        <h3 style="margin-top: 100px; font-size: 25px; color: navy; z-index: 333;">
+            No data available
+        </h3>
+        <p style="margin-bottom: 80px;  color: navy;">This user was not found in our database</p>
+    </div>
+</div>
+{{ end }}

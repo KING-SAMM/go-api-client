@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    {{ if . }}
+    <h1 class="heading">{{ .Firstname }} {{ .Lastname }}</h1>
+    <div class="container">
+            <div class="user">
+                <h2>{{ .Firstname }} {{ .Lastname }}</h2>
+                <p>{{ .Email }}</p>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laboriosam rerum error hic dolore ullam autem, repellat est numquam unde neque delectus exercitationem sint nemo illo nobis nostrum officia quod, consequuntur adipisci modi minima veniam commodi accusantium? Quos quae minima itaque id, officiis nulla fugit laudantium esse qui consequatur alias, quam obcaecati! Voluptatum illo illum error quas, aliquid esse ipsam ducimus hic, ex et ad, dicta laborum laboriosam quasi qui sint voluptates assumenda minus! Ut voluptas quidem, nihil voluptatem asperiores officia aliquam illo, eveniet quia fuga mollitia maiores soluta unde voluptate qui repellendus. Labore perspiciatis, dignissimos vel aliquam modi atque.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, provident. Voluptates distinctio maiores, quam iure error dolor corporis culpa asperiores suscipit maxime, facere quod autem amet nobis dignissimos dicta nemo numquam consequuntur ducimus eligendi doloribus? Facilis, laborum et. Unde quos laudantium provident obcaecati recusandae optio ipsum, velit aperiam necessitatibus veniam.
+                </p>
+                <a href="/users">Back to All Users</a>
+            </div>
+        {{ else }}
+            {{ template "no_data_error" }}
+        {{ end }}
+    </div>
+</body>
+</html>
