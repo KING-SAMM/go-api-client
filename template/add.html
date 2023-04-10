@@ -18,6 +18,18 @@
                 <button type="submit" class="btn">Add</button>
             </form>
         </div>
+        {{ if . }}
+            {{ if .Success }}
+                <div class="success">
+                    <p>{{ .Success }}</p>
+                </div>
+            {{ else }}
+                <div class="error">
+                    <p>{{ .Error }}</p>
+                </div>
+            {{ end }}
+        {{ end }}
+        <a href="/users">Back to All Users</a>
     </div>
 </body>
 </html>
